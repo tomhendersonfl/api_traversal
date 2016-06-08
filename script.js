@@ -15,7 +15,11 @@ function getSearchResults() {
     if (responseObj["Response"] === "True") {
       for (var i = 0; i < responseArray.length; i++) {
         el += `<p>${responseArray[i]["Title"]}</p>`
-        el += `<img src="${responseArray[i]["Poster"]}" class="center_column">`
+        if (responseArray[i]["Poster"] === "N/A") {
+          el += `<img src="mockups/images/no_image.png" class="center_column">`
+        } else {
+          el += `<img src="${responseArray[i]["Poster"]}" class="center_column">`
+        }
       }
       document.getElementById("container").innerHTML = el;
     } else {
