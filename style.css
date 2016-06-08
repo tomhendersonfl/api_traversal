@@ -2,22 +2,13 @@
   margin: 0;
   padding: 0;
 }
-.movie_poster{
-  width: 150px;
-  height: 221px;
-  margin: auto;
-}
-
 #container{
   height: 70vw;
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /*border: 2px solid black;
-  background-color: yellow;*/
   overflow: auto;
-  /*white-space: nowrap;*/
 }
 p {
   margin: auto;

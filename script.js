@@ -1,9 +1,3 @@
-// $("#searchButton").click(function() {
-//   var searchString=document.getElementById("searchString").value;
-//   $.get("http://www.omdbapi.com/?s=" + searchString, function(data,status){
-//     getSearchResults(data,status)
-//   });
-// })
 document.getElementById("searchButton").addEventListener("click",doSendGetRequest);
 var httpGetRequest = new XMLHttpRequest();
 function doSendGetRequest() {
